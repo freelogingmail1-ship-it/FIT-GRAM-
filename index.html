@@ -123,6 +123,112 @@ select{border:1px solid var(--line);background:var(--card);border-radius:999px;p
 .selbar button{width:46px;height:36px;border-radius:12px;background:#333;color:#fff;font-size:20px}
 .emojis{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
 .emojis button{font-size:28px;flex:none;padding:2px 4px}
+.ob{background:#B54708;color:#fff;text-align:center;font-size:13px;padding:5px 12px}
+.bub.pending{opacity:.72}
+.imgbtn{margin:8px 0}
+/* ===== premium theme ===== */
+:root{--bg:#F3F5FB;--card:#fff;--ink:#0B1220;--mute:#5A6579;--line:#E5E9F2;--brand:#2447F5;--chip:#EAEEF9;--glass:rgba(243,245,251,.82);
+  --grad:linear-gradient(135deg,#2447F5 0%,#4B6BFF 55%,#17B8E6 100%);--shadow:0 1px 2px rgba(16,24,40,.05),0 10px 28px rgba(16,24,40,.07)}
+[data-theme=dark]{--bg:#070A12;--card:#0F1524;--ink:#F2F5FB;--mute:#9AA6BA;--line:#1C2538;--brand:#6C87FF;--chip:#17203A;--glass:rgba(7,10,18,.82);
+  --grad:linear-gradient(135deg,#3355FF 0%,#5A78FF 55%,#22C3EE 100%);--shadow:0 1px 2px rgba(0,0,0,.45),0 12px 32px rgba(0,0,0,.4)}
+.logo b{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.top{background:var(--glass);-webkit-backdrop-filter:saturate(1.5) blur(14px);backdrop-filter:saturate(1.5) blur(14px)}
+.nav{background:var(--glass);-webkit-backdrop-filter:saturate(1.5) blur(14px);backdrop-filter:saturate(1.5) blur(14px)}
+.nav .on::after{content:"";position:absolute;bottom:7px;width:5px;height:5px;border-radius:50%;background:var(--brand)}
+.card{border-radius:20px;box-shadow:var(--shadow)}
+.post{margin:12px;padding:14px;border:1px solid var(--line);border-radius:20px;background:var(--card);box-shadow:var(--shadow)}
+.pimg{border-radius:14px}
+.btn{background:var(--grad);box-shadow:0 6px 16px rgba(36,71,245,.25)}
+.btn.ghost,.btn.danger{box-shadow:none}
+.btn.sm{padding:7px 16px}
+input,textarea{border-radius:14px}
+input:focus,textarea:focus{border-color:var(--brand);outline:3px solid rgba(36,71,245,.18);outline-offset:0}
+.rx.on{background:var(--grad)}
+.tabs{border:0;background:var(--chip);border-radius:999px;padding:4px;margin:8px 12px}
+.tabs button{border:0;border-radius:999px;padding:8px 10px}
+.tabs .on{background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
+.ring{width:64px;height:64px;border:0;padding:3px;background:linear-gradient(135deg,#2447F5,#17B8E6,#7C5CFF)}
+.ring .av{border:2px solid var(--bg);box-sizing:content-box}
+.ring.add{border:2px dashed var(--mute);background:none;padding:0}
+.bub{border-radius:18px 18px 18px 6px;background:var(--card);border:1px solid var(--line)}
+.bub.me{border-radius:18px 18px 6px 18px;background:var(--grad);border-color:transparent;color:#fff}
+.item:active{background:var(--chip)}
+.toast{box-shadow:var(--shadow)}
+.wchip{background:var(--chip);border-radius:999px;padding:5px 12px;font-weight:700;font-size:14px;color:var(--ink);margin-right:2px}
+.wal{text-align:center;padding:20px 16px;background:var(--grad);color:#fff;border:0}
+.wal .muted{color:rgba(255,255,255,.85)}
+.bal{font-size:40px;font-weight:700;line-height:1.1;margin:4px 0 12px}
+.prog{height:8px;background:rgba(255,255,255,.28);border-radius:6px;overflow:hidden;margin-bottom:8px}.prog i{display:block;height:100%;background:#fff;border-radius:6px}
+.code{background:var(--chip);padding:8px 12px;border-radius:12px;word-break:break-all;font-size:13px}
+.pcover{height:140px;background:var(--grad);position:relative;border-radius:0 0 30px 30px;overflow:hidden}
+.pcover::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 88% 15%,rgba(255,255,255,.30),transparent 45%),radial-gradient(circle at 8% 95%,rgba(255,255,255,.16),transparent 42%)}
+.pback,.pgear{position:absolute;top:10px;z-index:2;color:#fff;background:rgba(0,0,0,.25)}.pback{left:10px}.pgear{right:10px}
+.phead{margin-top:-54px;padding:0 20px;text-align:center;position:relative}
+.pav{display:inline-block;border-radius:50%;padding:4px;background:var(--bg);box-shadow:var(--shadow)}
+.pname{font-size:22px;font-weight:700;line-height:1.25;margin-top:8px}
+.pbio{margin:8px auto 0;max-width:420px;white-space:pre-wrap;word-break:break-word}
+.pjoin{margin-top:6px}
+.chips{justify-content:center;flex-wrap:wrap;margin-top:8px}
+.pstats{display:grid;grid-template-columns:repeat(3,1fr);margin:16px 12px;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+.pstats>*{padding:12px 4px;text-align:center}.pstats>*+*{border-left:1px solid var(--line)}.pstats b{display:block;font-size:19px;line-height:1.2}
+.pact{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:0 16px;margin-bottom:6px}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:0 12px}
+.pgrid button{aspect-ratio:1;background:var(--chip);overflow:hidden;position:relative;border-radius:10px;display:grid;place-items:center;font-size:26px}
+.pgrid img,.pgrid video{width:100%;height:100%;object-fit:cover;display:block}
+.pgrid .play{position:absolute;right:6px;bottom:4px;color:#fff;font-size:14px;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+.mimg{display:block;max-width:100%;width:240px;max-height:320px;object-fit:cover;border-radius:12px;background:var(--chip);min-height:90px;cursor:zoom-in}
+.bub:has(.mimg){padding:4px 4px 6px}.bub:has(.mimg) time{padding:0 8px}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:50;display:flex;flex-direction:column}
+.lbbar{display:flex;gap:10px;align-items:center;padding:calc(10px + env(safe-area-inset-top)) 12px 10px;color:#fff;position:relative;z-index:2}
+.lbbar button{color:#fff;font-size:15px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.16)}
+.lbst{flex:1;min-height:0;display:grid;place-items:center;touch-action:none;overflow:hidden}
+.lbst img{max-width:100%;max-height:100%;object-fit:contain;will-change:transform;user-select:none;-webkit-user-select:none;-webkit-user-drag:none}
+.pimg[data-a=zoom],.mimg[data-a=zoom]{cursor:zoom-in}
+/* ===== profile (clean, left aligned) ===== */
+.pcard{margin:10px 12px;padding:18px;border-radius:22px;border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow)}
+.phrow{display:flex;gap:14px;align-items:center}
+.pname{font-size:22px;font-weight:700;line-height:1.25}
+.pbio{margin-top:12px;white-space:pre-wrap;word-break:break-word}
+.pstats3d{display:flex;gap:10px;margin:16px 0 14px}
+.pstat{flex:1;padding:10px 6px;border-radius:14px;text-align:center;background:var(--chip)}
+.pstat b{display:block;font-size:19px;line-height:1.2}
+.pstat:active{transform:scale(.97)}
+.pact{justify-content:flex-start;padding:0;margin-bottom:0}
+.pcard .chips{justify-content:flex-start}
+.pcard .pact+.pact{margin-top:6px}
+
+/* ===== floating 3D bottom navigation ===== */
+#app{padding-bottom:calc(100px + env(safe-area-inset-bottom))}
+.nav{left:50%;transform:translateX(-50%);width:calc(100% - 24px);max-width:616px;bottom:calc(10px + env(safe-area-inset-bottom));
+  padding:6px;gap:2px;border:1px solid var(--line);border-radius:30px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 20px 36px -14px rgba(16,24,40,.4),0 3px 8px rgba(16,24,40,.1)}
+[data-theme=dark] .nav{box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 20px 36px -14px rgba(0,0,0,.8)}
+.nav button{height:58px;border-radius:22px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+  color:var(--mute);transition:transform .2s cubic-bezier(.3,1.4,.5,1),box-shadow .2s,background .2s,color .2s}
+.nav button svg{width:22px;height:22px}
+.nav .nl{font-size:10.5px;font-weight:600;line-height:1}
+.nav button:active{transform:scale(.9)}
+.nav .on{background:var(--grad);color:#fff;transform:translateY(-9px) scale(1.05);
+  box-shadow:0 16px 24px -8px rgba(36,71,245,.7),0 4px 8px rgba(36,71,245,.35),inset 0 1px 0 rgba(255,255,255,.45),inset 0 -4px 7px rgba(0,0,0,.2)}
+.nav .on:active{transform:translateY(-6px) scale(1)}
+.nav .on::after{display:none}
+.nav .bd{top:3px;right:12px}
+.cbar{bottom:calc(86px + env(safe-area-inset-bottom))}
+.toast{bottom:calc(110px + env(safe-area-inset-bottom))}
+
+/* ===== smart scrolling ===== */
+html{scroll-padding-top:70px}
+.top{transition:transform .28s ease}
+.top.hide{transform:translateY(-100%)}
+.post{content-visibility:auto;contain-intrinsic-size:auto 420px}
+.stories{scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}.st{scroll-snap-align:start}
+#main{animation:fadein .25s ease}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+.up{position:fixed;right:16px;bottom:calc(98px + env(safe-area-inset-bottom));width:44px;height:44px;border-radius:50%;z-index:7;
+  background:var(--card);color:var(--ink);border:1px solid var(--line);font-size:20px;box-shadow:var(--shadow)}
+body[data-v=room] .up,body[data-v=group] .up{display:none}
+body.typing .nav,body.typing .up{display:none}
+body.typing .cbar{bottom:0}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -138,7 +244,12 @@ const cfg = {
 };
 /* ====================================================================== */
 
-const sb = supabase.createClient(cfg.url, cfg.key);
+const fetchT=(url,opt={})=>{
+  const long=/\/storage\//.test(String(url)), c=new AbortController(), id=setTimeout(()=>c.abort(),long?60000:8000);
+  if(opt.signal&&opt.signal.addEventListener)opt.signal.addEventListener('abort',()=>c.abort());
+  return fetch(url,{...opt,signal:c.signal}).finally(()=>clearTimeout(id));
+};
+const sb = supabase.createClient(cfg.url, cfg.key, {global:{fetch:fetchT}});
 const app = document.getElementById('app');
 const PAGE = 10;
 const REACTS = { like:'👍', love:'❤️', fire:'🔥', strong:'💪' };
@@ -341,14 +452,80 @@ const BN={
   'Share story':'স্টোরি দিন',
   'Add a caption…':'ক্যাপশন লিখুন…',
   'Smaller':'ছোট',
-  'Bigger':'বড়'
+  'Bigger':'বড়',
+  'You are offline. Messages will be sent when you reconnect.':'আপনি অফলাইনে আছেন। ইন্টারনেট ফিরলে মেসেজ নিজে থেকেই চলে যাবে।',
+  'Offline. {n} waiting to send':'অফলাইন। {n}টি মেসেজ পাঠানোর অপেক্ষায়',
+  'Waiting to send: {n}':'পাঠানোর অপেক্ষায়: {n}টি',
+  'Waiting to send':'পাঠানোর অপেক্ষায়',
+  'A message could not be sent':'একটি মেসেজ পাঠানো যায়নি',
+  'You are offline. This screen needs internet.':'আপনি অফলাইনে আছেন। এই পাতার জন্য ইন্টারনেট লাগবে।',
+  'Data saver':'ডাটা সেভার',
+  'Photos load only when you tap them, and photos you upload are smaller.':'ছবি চাপ দিলে তবেই লোড হবে, আর আপনার আপলোড করা ছবি ছোট হবে।',
+  'On':'চালু',
+  'Off':'বন্ধ',
+  'Load photo':'ছবি দেখুন',
+  'Send photo or video':'ছবি বা ভিডিও পাঠান',
+  'Load video':'ভিডিও দেখুন',
+  'Video':'ভিডিও',
+  'Photo':'ছবি',
+  'Photos':'ছবি',
+  'No photos yet.':'এখনো কোনো ছবি নেই।',
+  'Edit profile':'প্রোফাইল এডিট',
+  'Wallet':'ওয়ালেট',
+  'Balance':'ব্যালেন্স',
+  'You can withdraw now':'আপনি এখন উইথড্র করতে পারবেন',
+  'Daily message reward':'দৈনিক মেসেজ রিওয়ার্ড',
+  'Done for today ✓':'আজকের রিওয়ার্ড পাওয়া হয়ে গেছে ✓',
+  'Refer friends':'বন্ধুদের রেফার করুন',
+  'Copy':'কপি',
+  'Share':'শেয়ার',
+  'Copied':'কপি হয়েছে',
+  '{a} joined, {b} rewarded':'{a} জন জয়েন করেছে, {b} জনের বোনাস পেয়েছেন',
+  'Withdraw to bKash':'বিকাশে উইথড্র',
+  'bKash number':'বিকাশ নম্বর',
+  'Enter the bKash number again':'বিকাশ নম্বরটি আবার লিখুন',
+  'Withdraw':'উইথড্র',
+  'Enter a valid 11-digit bKash number':'সঠিক ১১ সংখ্যার বিকাশ নম্বর দিন',
+  'The two bKash numbers do not match':'দুইটা বিকাশ নম্বর মিলছে না',
+  'Withdraw your full balance to {n}?':'{n} নম্বরে পুরো ব্যালেন্স উইথড্র করবেন?',
+  'Withdrawal request submitted successfully':'উইথড্রর অনুরোধ সফলভাবে জমা হয়েছে',
+  'History':'ইতিহাস',
+  'Referral bonus':'রেফারেল বোনাস',
+  'Withdrawal':'উইথড্র',
+  'Withdrawal refund':'উইথড্র ফেরত',
+  'Pending':'অপেক্ষমাণ',
+  'Paid':'পরিশোধিত',
+  'Rejected':'বাতিল',
+  'No activity yet.':'এখনো কিছু নেই।',
+  'How it works':'কীভাবে কাজ করে',
+  'Referral bonus is paid after the friend sends their first message.':'রেফার করা বন্ধু প্রথম মেসেজ পাঠানোর পর বোনাস পাবেন।',
+  'Withdrawals are checked and paid to bKash by the team. The status stays Pending until it is paid.':'উইথড্র যাচাই করে টিম বিকাশে পরিশোধ করে। পরিশোধ না হওয়া পর্যন্ত স্ট্যাটাস অপেক্ষমাণ থাকবে।',
+  'Fake or duplicate accounts are not rewarded.':'ভুয়া বা একই ব্যক্তির একাধিক অ্যাকাউন্টে রিওয়ার্ড দেওয়া হয় না।',
+  'Referral code (optional)':'রেফারেল কোড (ঐচ্ছিক)',
+  'Join me on FIT GRAM':'FIT GRAM-এ আমার সাথে জয়েন করুন',
+  '{n} more to reach the {m} minimum':'মিনিমাম {m} হতে আরও {n} লাগবে',
+  'Send a direct message to anyone today to earn {a}.':'আজ যেকোনো একজনকে সরাসরি মেসেজ করে {a} পান।',
+  'Earn {a} when a friend you refer sends their first message.':'আপনার রেফার করা বন্ধু প্রথম মেসেজ পাঠালে {a} পান।',
+  'Minimum withdrawal is {m}. Your whole balance is withdrawn at once.':'মিনিমাম উইথড্র {m}। পুরো ব্যালেন্স একসাথে উইথড্র হয়।',
+  'The minimum withdrawal has not been reached yet':'মিনিমাম উইথড্র এখনো পূরণ হয়নি',
+  'You get {a} for your first direct message to another person each day.':'প্রতিদিন অন্য একজনকে প্রথম সরাসরি মেসেজ করলে {a} পাবেন।',
+  'Payouts are sent to your bKash in Bangladeshi taka at the exchange rate on the payout day.':'পেআউট বিকাশে বাংলাদেশি টাকায়, পেআউটের দিনের এক্সচেঞ্জ রেট অনুযায়ী পাঠানো হয়।',
+  'Save photo':'ছবি সেভ করুন',
+  'Photo saved':'ছবি সেভ হয়েছে',
+  'Opened in a new tab. Long-press the photo to save it.':'নতুন ট্যাবে খুলেছে। ছবিতে চেপে ধরে সেভ করুন।',
+  'The database needs the latest SQL update (catchup.sql)':'ডাটাবেসে সর্বশেষ SQL আপডেট (catchup.sql) চালাতে হবে'
 };
 const L=(k,v)=>{let x=(lang==='bn'&&BN[k])||k; if(v)for(const n in v)x=x.split('{'+n+'}').join(v[n]); return x;};
 const LOC=()=>lang==='bn'?'bn-BD':'en-US';
+let saver=false, offlineNow=false; try{saver=localStorage.getItem('fg-saver')==='1'}catch(e){}
 const saveLang=()=>{try{localStorage.setItem('fg-lang',lang)}catch(e){} document.documentElement.lang=lang;};
 const bn = n=>Number(n).toLocaleString(LOC());
 const nm = p=>esc(p?.full_name||p?.name||p?.username||'')+(p?.is_verified?BADGE:'');
 const errMsg = e=>{const m=e?.message||'';
+  if(/schema cache|could not find the|column .* does not exist|relation .* does not exist|function .* does not exist/i.test(m))return L('The database needs the latest SQL update (catchup.sql)');
+  if(/below_minimum/.test(m))return L('The minimum withdrawal has not been reached yet');
+  if(/invalid_number/.test(m))return L('Enter a valid 11-digit bKash number');
+  if(/numbers_do_not_match/.test(m))return L('The two bKash numbers do not match');
   if(/already registered/i.test(m))return L('An account with this email already exists');
   if(/too_many_attempts/.test(m))return L('Too many wrong attempts. Try again in 10 minutes');
   if(/duplicate key/i.test(m))return L('This name is already taken');
@@ -381,7 +558,7 @@ async function shrink(file,max){
 async function upload(bucket,file){
   const vid=file.type.startsWith('video/');
   if(vid&&file.size>50*1024*1024)throw new Error(L('Video can be 50 MB at most'));
-  const body=vid?file:await shrink(file,bucket==='avatars'?512:1280);
+  const body=vid?file:await shrink(file,bucket==='avatars'?512:(saver?720:1280));
   const ext=vid?((file.name.split('.').pop()||'mp4').toLowerCase().replace(/[^a-z0-9]/g,'')||'mp4'):'jpg';
   const path=`${me.id}/${Date.now()}.${ext}`;
   ok(await sb.storage.from(bucket).upload(path,body,{contentType:vid?file.type:'image/jpeg'}));
@@ -393,6 +570,151 @@ function setTheme(t){document.documentElement.dataset.theme=t;try{localStorage.s
 document.documentElement.lang=lang;
 try{setTheme(localStorage.getItem('fg-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))}catch(e){}
 
+/* ================== OFFLINE SUPPORT ================== */
+const isNetErr=e=>{const m=String((e&&e.message)||e||'');return !navigator.onLine||/failed to fetch|networkerror|network request failed|load failed|fetch failed|abort|timeout|timed out/i.test(m);};
+const CK=k=>`fgc:${me&&me.id}:${k}`;
+const cacheSet=(k,v)=>{try{localStorage.setItem(CK(k),JSON.stringify(v));}catch(e){}};
+const cacheGet=k=>{try{const x=localStorage.getItem(CK(k));return x?JSON.parse(x):null;}catch(e){return null;}};
+async function cached(k,fn){
+  try{const v=await fn();cacheSet(k,v);offlineNow=false;return v;}
+  catch(e){if(isNetErr(e)){const c=cacheGet(k);if(c!==null){offlineNow=true;return c;}}throw e;}
+}
+const uid4=()=>(window.crypto&&crypto.randomUUID)?crypto.randomUUID():'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,c=>{const r=Math.random()*16|0;return(c==='x'?r:(r&3|8)).toString(16);});
+
+let _db=null;
+const idb=()=>_db||(_db=new Promise((res,rej)=>{const r=indexedDB.open('fitgram',1);r.onupgradeneeded=()=>r.result.createObjectStore('outbox',{keyPath:'id'});r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error);}));
+const idbTx=async(mode,fn)=>{const db=await idb();return new Promise((res,rej)=>{const t=db.transaction('outbox',mode),rq=fn(t.objectStore('outbox'));t.oncomplete=()=>res(rq&&rq.result);t.onerror=()=>rej(t.error);});};
+const memOutbox=new Map();
+const outboxPut=async e=>{try{await idbTx('readwrite',s=>s.put(e));}catch(x){memOutbox.set(e.id,e);}};
+const outboxDel=async id=>{memOutbox.delete(id);try{await idbTx('readwrite',s=>s.delete(id));}catch(x){}};
+const outboxAll=async()=>{let a=[];try{a=(await idbTx('readonly',s=>s.getAll()))||[];}catch(x){}const ids=new Set(a.map(v=>v.id));[...memOutbox.values()].forEach(v=>{if(!ids.has(v.id))a.push(v);});return a.filter(x=>x.uid===(me&&me.id)).sort((p,q)=>p.at-q.at);};
+
+async function paintBanner(){
+  const el=$('#ob'); if(!el)return; const n=(await outboxAll()).length, off=!navigator.onLine||offlineNow;
+  el.hidden=!(off||n);
+  el.textContent=off?(n?L('Offline. {n} waiting to send',{n:bn(n)}):L('You are offline. Messages will be sent when you reconnect.')):L('Waiting to send: {n}',{n:bn(n)});
+}
+const pendBubble=e=>`<div class="bub me pending" data-cid="${e.id}">${e.kind==='voice'
+  ?`<button class="vm" data-a="playvoice" data-id="${e.id}" data-p="local:${e.id}" aria-label="${L('Play voice message')}"><span class="pl">▶</span><span class="ps">⏸</span><span class="wv"></span><span>${fmt(e.secs||0)}</span></button>`
+  :e.kind==='media'?(e.mtype==='video'?`<video class="mimg" src="${URL.createObjectURL(e.blob)}" muted playsinline preload="metadata"></video>`:`<img class="mimg" alt="" src="${URL.createObjectURL(e.blob)}">`)
+  :esc(e.body)}<time>⏳ ${L('Waiting to send')}</time></div>`;
+function addPending(e){const b=$('#msgs');if(!b)return;b.insertAdjacentHTML('beforeend',pendBubble(e));window.scrollTo(0,document.body.scrollHeight);}
+function swapPending(e,row){
+  const key='msgs:'+(e.gid?'group:'+e.gid:'room:'+e.to), c=cacheGet(key);
+  if(c){c.push(row);cacheSet(key,c.slice(-100));}
+  const el=document.querySelector(`[data-cid="${e.id}"]`); if(el){el.outerHTML=bubble(row);hydrateMedia().catch(()=>{});}
+}
+async function queueMsg(p){
+  const e={id:uid4(),uid:me.id,at:Date.now(),kind:p.kind,body:p.body||'',blob:p.blob||null,mime:p.mime||'',secs:p.secs||0,mtype:p.mtype||'',
+    gid:view.name==='group'?view.id:null,to:view.name==='room'?view.id:null};
+  await outboxPut(e); addPending(e); paintBanner();
+  flushOutbox().catch(()=>{});
+}
+let flushing=false, flushErrShown=false;
+async function flushOutbox(){
+  if(flushing||!me)return;
+  const items=await outboxAll(); if(!items.length){paintBanner();return;}
+  flushing=true; let conflict=false, sentN=0;
+  try{
+    await sb.auth.getSession();
+    for(const e of items){
+      try{
+        let audio_path=null, media_path=null;
+        if(e.kind==='media'){
+          const ext=e.mtype==='video'?((e.mime.split('/')[1]||'mp4').replace('quicktime','mov').replace(/[^a-z0-9]/g,'')||'mp4'):'jpg';
+          media_path=`${me.id}/${e.id}.${ext}`;
+          const up=await sb.storage.from('chatmedia').upload(media_path,e.blob,{contentType:e.mime});
+          if(up.error&&!/exist|duplicate|409/i.test(String(up.error.message)+String(up.error.statusCode||'')))throw up.error;
+        }
+        if(e.kind==='voice'){
+          const ext=e.mime.includes('mp4')?'m4a':e.mime.includes('ogg')?'ogg':'webm';
+          audio_path=`${me.id}/${e.id}.${ext}`;
+          const up=await sb.storage.from('voice').upload(audio_path,e.blob,{contentType:e.mime.split(';')[0]});
+          if(up.error&&!/exist|duplicate|409/i.test(String(up.error.message)+String(up.error.statusCode||'')))throw up.error;
+        }
+        const row={sender_id:me.id,client_id:e.id,body:e.body||'',...(e.gid?{group_id:e.gid}:{receiver_id:e.to}),...(audio_path?{audio_path,audio_secs:Math.min(e.secs||1,300)}:{}),...(media_path?{media_path,media_type:e.mtype}:{})};
+        let r=await sb.from('messages').insert(row).select().single();
+        if(r.error&&/client_id/i.test(String(r.error.message))){delete row.client_id;r=await sb.from('messages').insert(row).select().single();}
+        if(r.error&&r.error.code==='23505'){await outboxDel(e.id);conflict=true;continue;}
+        if(r.error)throw r.error;
+        await outboxDel(e.id); swapPending(e,r.data); sentN++;
+      }catch(err){
+        if(isNetErr(err)||/jwt|expired|401/i.test(String((err&&err.message)||'')))break;
+        if(['42501','23514','23503'].includes(err&&err.code)){await outboxDel(e.id);document.querySelector(`[data-cid="${e.id}"]`)?.remove();toast(L('A message could not be sent'));continue;}
+        if(!flushErrShown){flushErrShown=true;toast(L('A message could not be sent')+': '+errMsg(err));}
+        break;
+      }
+    }
+  }finally{flushing=false;}
+  paintBanner(); refreshBadges(); if(sentN)setTimeout(()=>loadWallet().catch(()=>{}),800);
+  if(conflict)refreshMsgs().catch(()=>{});
+}
+async function fetchMsgs(kind,id){
+  let q=sb.from('messages').select('*').order('created_at',{ascending:false}).limit(100);
+  q=kind==='group'?q.eq('group_id',id):q.is('group_id',null).or(`and(sender_id.eq.${me.id},receiver_id.eq.${id}),and(sender_id.eq.${id},receiver_id.eq.${me.id})`);
+  return ok(await q).data.reverse();
+}
+async function msgsHtml(kind,id){
+  const ms=await cached('msgs:'+kind+':'+id,()=>fetchMsgs(kind,id));
+  const pend=(await outboxAll()).filter(e=>kind==='group'?e.gid===id:(!e.gid&&e.to===id));
+  return ms.map(x=>bubble(x)).join('')+pend.map(pendBubble).join('');
+}
+async function refreshMsgs(){
+  const b=$('#msgs'); if(!b||(view.name!=='room'&&view.name!=='group'))return;
+  b.innerHTML=await msgsHtml(view.name==='group'?'group':'room',view.id); window.scrollTo(0,document.body.scrollHeight); hydrateMedia().catch(()=>{});
+}
+function storedUser(){
+  try{for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);
+    if(/^sb-.+-auth-token$/.test(k)){const j=JSON.parse(localStorage.getItem(k));const u=j&&(j.user||(j.currentSession&&j.currentSession.user));if(u&&u.id)return u;}}}catch(e){}
+  return null;
+}
+window.addEventListener('online',()=>{paintBanner();flushOutbox().catch(()=>{});if(me)refreshBadges();});
+window.addEventListener('offline',paintBanner);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&me)flushOutbox().catch(()=>{});});
+setInterval(()=>{if(me)flushOutbox().catch(()=>{});},20000);
+
+/* ================== WALLET ================== */
+let wallet=null;
+try{const r=new URLSearchParams(location.search).get('ref');if(r)localStorage.setItem('fg-ref',r.toLowerCase().replace(/[^a-z0-9_]/g,'').slice(0,20));}catch(e){}
+const refStored=()=>{try{return localStorage.getItem('fg-ref')||'';}catch(e){return '';}};
+const usd=c=>'$'+((Number(c)||0)/100).toLocaleString(LOC(),{minimumFractionDigits:2,maximumFractionDigits:2});
+const paintWallet=()=>{const e=$('#wb');if(e&&wallet)e.textContent=usd(wallet.balance);};
+async function loadWallet(){wallet=await cached('wallet',async()=>ok(await sb.rpc('my_wallet')).data);paintWallet();return wallet;}
+async function vWallet(m){
+  const [w,tx,wd]=await Promise.all([
+    cached('wallet',async()=>ok(await sb.rpc('my_wallet')).data),
+    cached('wtx',async()=>ok(await sb.from('wallet_tx').select('id,amount,kind,created_at').order('created_at',{ascending:false}).limit(30)).data),
+    cached('wwd',async()=>ok(await sb.from('withdrawals').select('id,amount,bkash,status,created_at').order('created_at',{ascending:false}).limit(10)).data)]);
+  wallet=w; paintWallet();
+  const min=w.min_withdraw, bal=w.balance, pct=Math.min(100,Math.round(bal*100/min)), can=bal>=min;
+  const link=`${location.origin}${location.pathname}?ref=${encodeURIComponent(myProfile.username)}`;
+  const kl={daily_message:L('Daily message reward'),referral:L('Referral bonus'),withdraw:L('Withdrawal'),withdraw_refund:L('Withdrawal refund')};
+  const st={pending:L('Pending'),paid:L('Paid'),rejected:L('Rejected')};
+  m.innerHTML=`${backBar(L('Wallet'))}
+    <section class="card wal"><div class="muted">${L('Balance')} (USD)</div><div class="bal">${usd(bal)}</div>
+      <div class="prog"><i style="width:${pct}%"></i></div>
+      <div class="muted">${can?L('You can withdraw now'):L('{n} more to reach the {m} minimum',{n:usd(min-bal),m:usd(min)})}</div></section>
+    <section class="card form"><b>${L('Daily message reward')}</b><span class="muted">${w.today_done?L('Done for today ✓'):L('Send a direct message to anyone today to earn {a}.',{a:usd(w.daily)})}</span></section>
+    <section class="card form"><b>${L('Refer friends')}</b><span class="muted">${L('Earn {a} when a friend you refer sends their first message.',{a:usd(w.referral)})}</span>
+      <div class="code">${esc(link)}</div>
+      <div class="row"><button class="btn ghost sm" data-a="copyref" data-v="${esc(link)}">${L('Copy')}</button><button class="btn sm" data-a="shareref" data-v="${esc(link)}">${L('Share')}</button></div>
+      <span class="muted">${L('{a} joined, {b} rewarded',{a:bn(w.referrals),b:bn(w.referrals_paid)})}</span></section>
+    <section class="card form"><b>${L('Withdraw to bKash')}</b>
+      <span class="muted">${L('Minimum withdrawal is {m}. Your whole balance is withdrawn at once.',{m:usd(min)})}</span>
+      ${can?`<label>${L('bKash number')}<input id="wbk1" type="tel" inputmode="numeric" maxlength="11" autocomplete="off"></label>
+        <label>${L('Enter the bKash number again')}<input id="wbk2" type="tel" inputmode="numeric" maxlength="11" autocomplete="off"></label>
+        <button class="btn" data-a="withdraw">${L('Withdraw')}</button>`:`<button class="btn" disabled>${L('Withdraw')}</button>`}</section>
+    ${wd.length?`<div class="bar"><h2>${L('Withdrawal')}</h2></div>`+wd.map(x=>`<div class="item"><span class="grow"><b>${usd(x.amount)}</b><small class="clip">${esc(x.bkash)}</small></span><span class="tag">${st[x.status]||esc(x.status)}</span></div>`).join(''):''}
+    <div class="bar"><h2>${L('History')}</h2></div>
+    ${tx.length?tx.map(x=>`<div class="item"><span class="grow"><b>${kl[x.kind]||esc(x.kind)}</b><small>${ago(x.created_at)}</small></span><b style="color:${x.amount<0?'var(--heart)':'var(--on)'}">${x.amount<0?'−':'+'}${usd(Math.abs(x.amount))}</b></div>`).join(''):`<div class="empty">${L('No activity yet.')}</div>`}
+    <section class="card form"><b>${L('How it works')}</b>
+      <span class="muted">${L('You get {a} for your first direct message to another person each day.',{a:usd(w.daily)})}</span>
+      <span class="muted">${L('Referral bonus is paid after the friend sends their first message.')}</span>
+      <span class="muted">${L('Withdrawals are checked and paid to bKash by the team. The status stays Pending until it is paid.')}</span>
+      <span class="muted">${L('Payouts are sent to your bKash in Bangladeshi taka at the exchange rate on the payout day.')}</span>
+      <span class="muted">${L('Fake or duplicate accounts are not rewarded.')}</span></section>`;
+}
+
 /* ================== AUTH ================== */
 function authScreen(mode='login'){
   const su=mode==='signup';
@@ -400,7 +722,8 @@ function authScreen(mode='login'){
   <p class="muted">${L('Workouts, friends and daily progress in one place.')}</p>
   <form id="af">
     ${su?`<input name="full_name" placeholder="${L('Full name')}" required maxlength="50">
-    <input name="username" placeholder="${L('Username (a-z, 0-9, _)')}" required pattern="[a-zA-Z0-9_]{3,20}" autocapitalize="none">`:''}
+    <input name="username" placeholder="${L('Username (a-z, 0-9, _)')}" required pattern="[a-zA-Z0-9_]{3,20}" autocapitalize="none">
+    <input name="ref" placeholder="${L('Referral code (optional)')}" value="${esc(refStored())}" autocapitalize="none" maxlength="20">`:''}
     <input name="email" type="email" placeholder="${L('Email')}" required autocapitalize="none">
     <input name="password" type="password" placeholder="${L('Password (min 6 characters)')}" minlength="6" required>
     <button class="btn" type="submit">${su?L('Create account'):L('Log in')}</button>
@@ -422,7 +745,7 @@ function authScreen(mode='login'){
         const u=f.username.toLowerCase();
         const {data:ex}=await sb.from('profiles').select('id').eq('username',u).maybeSingle();
         if(ex) throw new Error(L('This username is already taken'));
-        const {data,error}=await sb.auth.signUp({email:f.email,password:f.password,options:{data:{username:u,full_name:f.full_name.trim()}}});
+        const {data,error}=await sb.auth.signUp({email:f.email,password:f.password,options:{data:{username:u,full_name:f.full_name.trim(),ref:(f.ref||'').trim().toLowerCase()}}});
         if(error) throw error;
         if(!data.session){toast(L('Click the link sent to your email to activate your account'));}
       } else {
@@ -437,28 +760,34 @@ function authScreen(mode='login'){
 /* ================== BOOT / SHELL ================== */
 function shell(){
   app.innerHTML=`<header class="top"><div class="logo">FIT<b>GRAM</b></div>
-    <button class="ic" data-a="notifs" aria-label="${L('Notifications')}">${svg('bell')}<span class="bd" id="bn"></span></button></header>
+    <div class="row"><button class="wchip" data-a="wallet" id="wb" aria-label="${L('Wallet')}">$0.00</button><button class="ic" data-a="notifs" aria-label="${L('Notifications')}">${svg('bell')}<span class="bd" id="bn"></span></button></div></header>
+    <div id="ob" class="ob" hidden></div>
     <main id="main"></main>
     <nav class="nav">
-      <button data-a="tab" data-k="home" aria-label="${L('Home')}">${svg('home')}</button>
-      <button data-a="tab" data-k="search" aria-label="${L('Search')}">${svg('search')}</button>
-      <button data-a="tab" data-k="compose" aria-label="${L('New post')}">${svg('plus')}</button>
-      <button data-a="tab" data-k="chats" aria-label="${L('Messages')}">${svg('chat')}<span class="bd" id="bm"></span></button>
-      <button data-a="tab" data-k="profile" aria-label="${L('Profile')}">${svg('user')}</button>
-    </nav>`;
+      <button data-a="tab" data-k="home" aria-label="${L('Home')}">${svg('home')}<span class="nl">${L('Home')}</span></button>
+      <button data-a="tab" data-k="search" aria-label="${L('Search')}">${svg('search')}<span class="nl">${L('Search')}</span></button>
+      <button data-a="tab" data-k="compose" aria-label="${L('New post')}">${svg('plus')}<span class="nl">${L('New post')}</span></button>
+      <button data-a="tab" data-k="chats" aria-label="${L('Messages')}">${svg('chat')}<span class="nl">${L('Messages')}</span><span class="bd" id="bm"></span></button>
+      <button data-a="tab" data-k="profile" aria-label="${L('Profile')}">${svg('user')}<span class="nl">${L('Profile')}</span></button>
+    </nav>
+    <button class="up" id="up" data-a="top" aria-label="Top" hidden>↑</button>`;
 }
 async function boot(user){
   me=user; stack=[]; view={name:'home'};
-  const {data}=await sb.from('profiles').select('*').eq('id',me.id).single(); myProfile=data;
-  const f=await sb.from('follows').select('following_id').eq('follower_id',me.id);
-  myFollowing=new Set((f.data||[]).map(x=>x.following_id));
-  const [bl,mp,pf]=await Promise.all([
-    sb.from('blocks').select('blocked_id').eq('blocker_id',me.id),
-    sb.from('pages').select('id,name,handle,avatar_url').eq('owner_id',me.id),
-    sb.from('page_follows').select('page_id').eq('user_id',me.id)]);
-  myBlocked=new Set((bl.data||[]).map(x=>x.blocked_id)); myPages=mp.data||[]; myPageFollowing=new Set((pf.data||[]).map(x=>x.page_id));
+  const d=await cached('boot',async()=>{
+    const p=ok(await sb.from('profiles').select('*').eq('id',me.id).single()).data;
+    const [f,bl,mp,pf]=await Promise.all([
+      sb.from('follows').select('following_id').eq('follower_id',me.id),
+      sb.from('blocks').select('blocked_id').eq('blocker_id',me.id),
+      sb.from('pages').select('id,name,handle,avatar_url').eq('owner_id',me.id),
+      sb.from('page_follows').select('page_id').eq('user_id',me.id)]);
+    return {p,following:(f.data||[]).map(x=>x.following_id),blocked:(bl.data||[]).map(x=>x.blocked_id),pages:mp.data||[],pfol:(pf.data||[]).map(x=>x.page_id)};
+  });
+  myProfile=d.p; myFollowing=new Set(d.following); myBlocked=new Set(d.blocked); myPages=d.pages; myPageFollowing=new Set(d.pfol);
+  if(offlineNow)view={name:'chats'};
   shell();
-  startRealtime(); refreshBadges(); render();
+  loadWallet().catch(()=>{});
+  startRealtime(); refreshBadges(); render(); paintBanner(); flushOutbox().catch(()=>{});
 }
 function setLang(l){lang=l;saveLang();if(me){shell();refreshBadges();render();}else authScreen();}
 function cleanup(){closeStory();myBlocked=new Set();myPages=[];myPageFollowing=new Set();me=null;myProfile=null;stack=[];online=new Set();posts.clear();sb.removeAllChannels();if(io)io.disconnect();}
@@ -499,16 +828,20 @@ async function refreshBadges(){
 }
 
 /* ================== ROUTER ================== */
-const views={page:vPage,newpage:vNewPage,home:vHome,search:vSearch,chats:vChats,room:vRoom,notifs:vNotifs,profile:vProfile,post:vPost,people:vPeople,settings:vSettings,group:vGroup,groupinfo:vGroupInfo,newgroup:vNewGroup};
+const views={page:vPage,newpage:vNewPage,home:vHome,search:vSearch,chats:vChats,room:vRoom,notifs:vNotifs,profile:vProfile,post:vPost,people:vPeople,settings:vSettings,group:vGroup,groupinfo:vGroupInfo,newgroup:vNewGroup,wallet:vWallet};
 async function render(){
   const m=$('#main'); if(!m)return;
+  if(document.body&&document.body.dataset)document.body.dataset.v=view.name;
   if(rec)abortRec();
   if(io){io.disconnect();io=null;}
   m.innerHTML=`<div class="load">${L('Loading…')}</div>`;
   const tab={home:'home',search:'search',page:'search',newpage:'search',chats:'chats',room:'chats',group:'chats',groupinfo:'chats',newgroup:'chats'}[view.name]||(view.name==='profile'&&(!view.id||view.id===me.id)?'profile':'');
   document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('on',b.dataset.k===tab));
   try{ await views[view.name](m,view); }
-  catch(e){console.error(e);m.innerHTML=`<div class="empty">${L('Something went wrong.')}<br>${esc(e.message||'')}</div>`;}
+  catch(e){console.error(e);m.innerHTML=isNetErr(e)
+    ?`<div class="empty">${L('You are offline. This screen needs internet.')}<br><br><button class="btn sm" data-a="tab" data-k="chats">${L('Messages')}</button></div>`
+    :`<div class="empty">${L('Something went wrong.')}<br>${esc(e.message||'')}</div>`;}
+  paintBanner();
   window.scrollTo(0,0);
 }
 function go(name,p={}){stack.push(view);view={name,...p};history.pushState(null,'');render();}
@@ -521,7 +854,7 @@ function postCard(p){
   const mine=rs.find(r=>r.user_id===me.id)?.kind, cc=p.comments?.[0]?.count||0;
   const head=pg?`<button class="who" data-a="page" data-id="${pg.id}">${av(pg,42)}<span><b>${esc(pg.name)}</b><small>${L('Page, ')}@${esc(pg.handle)}</small></span></button>`
     :`<button class="who" data-a="profile" data-id="${pr.id}">${av(pr,42)}<span><b>${nm(pr)}</b><small>@${esc(pr.username)}</small></span></button>`;
-  const media=p.image_url?(p.media_type==='video'?`<video class="pimg" controls playsinline preload="metadata" src="${esc(p.image_url)}"></video>`:`<img class="pimg" loading="lazy" src="${esc(p.image_url)}" alt="">`):'';
+  const media=p.image_url?(p.media_type==='video'?`<video class="pimg" controls playsinline preload="${saver?'none':'metadata'}" src="${esc(p.image_url)}"></video>`:(saver?`<button class="btn ghost sm imgbtn" data-a="loadimg" data-src="${esc(p.image_url)}">🖼️ ${L('Load photo')}</button>`:`<img class="pimg" data-a="zoom" loading="lazy" src="${esc(p.image_url)}" alt="">`)):'';
   return `<article class="post" id="p${p.id}">
     <div class="row">${head}<time>${ago(p.created_at)}</time>
       ${mineP?`<button class="ic" data-a="editpost" data-id="${p.id}" aria-label="${L('Edit')}">✏️</button><button class="ic" data-a="delpost" data-id="${p.id}" aria-label="${L('Delete')}">🗑️</button>`
@@ -549,7 +882,7 @@ async function vHome(m){
   loadStories();
   feedPage=0; feedDone=false; feedBusy=false;
   await loadFeed();
-  io=new IntersectionObserver(es=>{if(es[0].isIntersecting)loadFeed();},{rootMargin:'400px'});
+  io=new IntersectionObserver(es=>{if(es[0].isIntersecting)loadFeed();},{rootMargin:'900px'});
   io.observe($('#more'));
 }
 async function loadFeed(){
@@ -622,19 +955,26 @@ async function vProfile(m,v){
     sb.from('posts').select(SEL).eq('user_id',id).is('page_id',null).order('created_at',{ascending:false}).limit(30),
     sb.from('pages').select('id,name').eq('owner_id',id)]);
   const p=ok(pr).data, list=ok(ps).data, owned=pgs.data||[]; list.forEach(x=>posts.set(x.id,x));
-  const actions=isMe?`<button class="btn ghost sm" data-a="settings">${L('Profile and settings')}</button>${p.is_verified?'':`<button class="btn sm" data-a="settings">${L('Get verified')}</button>`}`
+  const media=list.filter(x=>x.image_url);
+  const actions=isMe
+    ?`<button class="btn sm" data-a="settings">${L('Edit profile')}</button><button class="btn ghost sm" data-a="wallet">$ ${L('Wallet')}</button>${p.is_verified?'':`<button class="btn ghost sm" data-a="settings">${L('Get verified')}</button>`}`
     :blocked?`<button class="btn ghost sm" data-a="block" data-id="${id}" data-b="0">${L('Unblock')}</button>`
     :followBtn(id,myFollowing.has(id))+`<button class="btn ghost sm" data-a="chat" data-id="${id}">${L('Message')}</button>`;
-  m.innerHTML=`${(!isMe||stack.length)?backBar('@'+p.username):''}<section class="prof">
-    <div class="row">${avo(p,76)}<div class="grow"><h2>${nm(p)}</h2><div class="muted">@${esc(p.username)}</div></div></div>
-    ${p.bio?`<p class="body">${esc(p.bio)}</p>`:''}
-    ${owned.length?`<div class="row" style="flex-wrap:wrap;margin-top:6px">${owned.map(g=>`<button class="chip-btn" data-a="page" data-id="${g.id}">${L('Page: ')}${esc(g.name)}</button>`).join('')}</div>`:''}
-    <div class="stats"><div><b>${bn(pc.count||0)}</b><span class="muted">${L('Posts')}</span></div>
-      <button data-a="people" data-id="${id}" data-mode="followers"><b>${bn(fo.count||0)}</b><span class="muted">${L('Followers')}</span></button>
-      <button data-a="people" data-id="${id}" data-mode="following"><b>${bn(fi.count||0)}</b><span class="muted">${L('Following')}</span></button></div>
-    <div class="row" style="flex-wrap:wrap">${actions}</div>
-    ${isMe?'':`<div class="row">${blocked?'':`<button class="link" data-a="block" data-id="${id}" data-b="1">${L('Block')}</button>`}<button class="link" data-a="report" data-k="user" data-id="${id}">${L('Report user')}</button></div>`}</section>
-    <div id="feed">${list.map(postCard).join('')||`<div class="empty">${L('No posts yet.')}</div>`}</div>`;
+  m.innerHTML=`${(!isMe||stack.length)?backBar('@'+p.username):''}
+    <section class="pcard">
+      <div class="phrow">${av(p,84)}
+        <div class="grow"><h2 class="pname">${nm(p)}</h2><div class="muted">@${esc(p.username)}</div></div></div>
+      ${p.bio?`<p class="pbio">${esc(p.bio)}</p>`:''}
+      ${owned.length?`<div class="row chips" style="margin-top:8px">${owned.map(g=>`<button class="chip-btn" data-a="page" data-id="${g.id}">${L('Page: ')}${esc(g.name)}</button>`).join('')}</div>`:''}
+      <div class="pstats3d"><div class="pstat"><b>${bn(pc.count||0)}</b><span class="muted">${L('Posts')}</span></div>
+        <button class="pstat" data-a="people" data-id="${id}" data-mode="followers"><b>${bn(fo.count||0)}</b><span class="muted">${L('Followers')}</span></button>
+        <button class="pstat" data-a="people" data-id="${id}" data-mode="following"><b>${bn(fi.count||0)}</b><span class="muted">${L('Following')}</span></button></div>
+      <div class="row pact" style="flex-wrap:wrap">${actions}</div>
+      ${isMe?'':`<div class="row pact">${blocked?'':`<button class="link" data-a="block" data-id="${id}" data-b="1">${L('Block')}</button>`}<button class="link" data-a="report" data-k="user" data-id="${id}">${L('Report user')}</button></div>`}
+    </section>
+    <div class="tabs"><button data-a="ptab" data-k="posts" class="on">${L('Posts')}</button><button data-a="ptab" data-k="photos">${L('Photos')}</button></div>
+    <div id="pp-posts"><div id="feed">${list.map(postCard).join('')||`<div class="empty">${L('No posts yet.')}</div>`}</div></div>
+    <div id="pp-photos" hidden>${media.length?`<div class="pgrid">${media.map(x=>`<button data-a="open" data-id="${x.id}">${saver?'🖼️':(x.media_type==='video'?`<video src="${esc(x.image_url)}" preload="metadata" muted></video><span class="play">▶</span>`:`<img loading="lazy" src="${esc(x.image_url)}" alt="">`)}</button>`).join('')}</div>`:`<div class="empty">${L('No photos yet.')}</div>`}</div>`;
 }
 
 /* ================== PAGES ================== */
@@ -694,15 +1034,34 @@ let gProfiles={}, curGroup=null;
 const fmt=n=>Math.floor(n/60)+':'+String(n%60).padStart(2,'0');
 const timeOf=x=>new Date(x.created_at).toLocaleTimeString(LOC(),{hour:'numeric',minute:'2-digit'});
 const voiceHtml=x=>`<button class="vm" data-a="playvoice" data-id="${x.id}" data-p="${esc(x.audio_path)}" aria-label="${L('Play voice message')}"><span class="pl">▶</span><span class="ps">⏸</span><span class="wv"></span><span>${fmt(x.audio_secs||0)}</span></button>`;
+const mediaHtml=x=>saver
+  ?`<button class="btn ghost sm" data-a="loadmedia" data-mp="${esc(x.media_path)}" data-mt="${x.media_type}">${x.media_type==='video'?'🎥 '+L('Load video'):'🖼️ '+L('Load photo')}</button>`
+  :(x.media_type==='video'?`<video class="mimg" controls playsinline preload="none" data-mp="${esc(x.media_path)}"></video>`:`<img class="mimg" alt="" data-a="zoom" data-mp="${esc(x.media_path)}">`);
+async function hydrateMedia(){
+  const els=[...document.querySelectorAll('#msgs [data-mp]')].filter(e=>e.tagName!=='BUTTON'&&!e.getAttribute('src'));
+  if(!els.length)return;
+  const {data,error}=await sb.storage.from('chatmedia').createSignedUrls([...new Set(els.map(e=>e.dataset.mp))],3600);
+  if(error||!data)return;
+  const mp=new Map(data.map(x=>[x.path,x.signedUrl])); els.forEach(e=>{const u=mp.get(e.dataset.mp);if(u)e.src=u;});
+}
+async function pickMedia(inp){
+  const files=[...inp.files].slice(0,5); inp.value='';
+  for(const f of files){
+    const vid=f.type.startsWith('video/');
+    if(vid&&f.size>50*1024*1024){toast(L('Video can be 50 MB at most'));continue;}
+    const blob=vid?f:await shrink(f,saver?720:1280);
+    await queueMsg({kind:'media',blob,mime:vid?f.type:'image/jpeg',mtype:vid?'video':'image'});
+  }
+}
 const bubble=x=>{
   const mine=x.sender_id===me.id, gp=gProfiles[x.sender_id];
   const tag=(view.name==='group'&&!mine)?`<small class="sn">${esc(gp?.full_name||gp?.username||'')}</small>`:'';
-  return `<div class="bub ${mine?'me':''}">${tag}${x.audio_path?voiceHtml(x):esc(x.body)}<time>${timeOf(x)}</time></div>`;
+  return `<div class="bub ${mine?'me':''}">${tag}${x.audio_path?voiceHtml(x):x.media_path?mediaHtml(x):esc(x.body)}<time>${timeOf(x)}</time></div>`;
 };
-function addBubble(x){const b=$('#msgs');if(!b)return;b.insertAdjacentHTML('beforeend',bubble(x));window.scrollTo(0,document.body.scrollHeight);}
+function addBubble(x){const b=$('#msgs');if(!b)return;b.insertAdjacentHTML('beforeend',bubble(x));window.scrollTo(0,document.body.scrollHeight);hydrateMedia().catch(()=>{});}
 async function markRead(from){await sb.from('messages').update({read_at:new Date().toISOString()}).eq('sender_id',from).eq('receiver_id',me.id).is('read_at',null);refreshBadges();}
 
-const barInner=()=>`<input id="mi" placeholder="${L('Write a message…')}" maxlength="2000" autocomplete="off"><button class="ic" data-a="rec" aria-label="${L('Record voice message')}">🎙️</button><button class="btn sm" data-a="send">${L('Send')}</button>`;
+const barInner=()=>`<input id="mi" placeholder="${L('Write a message…')}" maxlength="2000" autocomplete="off"><label class="ic" aria-label="${L('Send photo or video')}">🖼️<input id="mf" type="file" accept="image/*,video/*" multiple hidden></label><button class="ic" data-a="rec" aria-label="${L('Record voice message')}">🎙️</button><button class="btn sm" data-a="send">${L('Send')}</button>`;
 const recBar=()=>`<span class="recdot"></span><b id="rt">0:00</b><span class="grow muted">${L('Recording…')}</span><button class="btn ghost sm" data-a="reccancel">${L('Cancel')}</button><button class="btn sm" data-a="recsend">${L('Send')}</button>`;
 const restoreBar=()=>{const b=$('#cb');if(b)b.innerHTML=barInner();};
 
@@ -713,7 +1072,7 @@ async function startRec(){
   if(!navigator.mediaDevices||!window.MediaRecorder)throw new Error(L('Voice recording is not supported on this browser'));
   const stream=await navigator.mediaDevices.getUserMedia({audio:true});
   const mime=MIMES.find(x=>MediaRecorder.isTypeSupported(x))||'';
-  const mr=new MediaRecorder(stream,mime?{mimeType:mime}:undefined);
+  const mr=new MediaRecorder(stream,{...(mime?{mimeType:mime}:{}),audioBitsPerSecond:16000});
   const r={mr,stream,chunks:[],start:Date.now(),mime:mr.mimeType||mime||'audio/webm',timer:null};
   mr.ondataavailable=e=>{if(e.data&&e.data.size)r.chunks.push(e.data);};
   mr.start(250); rec=r;
@@ -731,43 +1090,44 @@ async function finishRec(){
   r.stream.getTracks().forEach(x=>x.stop()); restoreBar();
   const secs=Math.round((Date.now()-r.start)/1000);
   if(secs<1||blob.size<800)return toast(L('Recording is too short'));
-  const ext=r.mime.includes('mp4')?'m4a':r.mime.includes('ogg')?'ogg':'webm';
-  const path=`${me.id}/${Date.now()}.${ext}`;
-  ok(await sb.storage.from('voice').upload(path,blob,{contentType:r.mime.split(';')[0]}));
-  const base={sender_id:me.id,body:'',audio_path:path,audio_secs:Math.min(secs,300)};
-  const row=view.name==='group'?{...base,group_id:view.id}:{...base,receiver_id:view.id};
-  addBubble(ok(await sb.from('messages').insert(row).select().single()).data);
+  await queueMsg({kind:'voice',blob,mime:r.mime,secs:Math.min(secs,300)});
 }
 async function playVoice(t){
   const key=t.dataset.id;
   if(audioEl&&audioKey===key){ if(audioEl.paused){audioEl.play();t.classList.add('on');}else{audioEl.pause();t.classList.remove('on');} return; }
   if(audioEl){audioEl.pause();document.querySelectorAll('.vm.on').forEach(b=>b.classList.remove('on'));}
-  const {data,error}=await sb.storage.from('voice').createSignedUrl(t.dataset.p,3600); if(error)throw error;
-  const a=new Audio(data.signedUrl); audioEl=a; audioKey=key; t.classList.add('on');
+  let url;
+  if(t.dataset.p.startsWith('local:')){const e=(await outboxAll()).find(x=>x.id===t.dataset.p.slice(6));if(!e)return;url=URL.createObjectURL(e.blob);}
+  else{const {data,error}=await sb.storage.from('voice').createSignedUrl(t.dataset.p,3600);if(error)throw error;url=data.signedUrl;}
+  const a=new Audio(url); audioEl=a; audioKey=key; t.classList.add('on');
   a.onended=()=>{t.classList.remove('on');if(audioEl===a){audioEl=null;audioKey=null;}};
   await a.play();
 }
 
 /* ---- chat list ---- */
 async function vChats(m){
-  const [dm,gmr,gu]=await Promise.all([
-    sb.from('messages').select('*').is('group_id',null).or(`sender_id.eq.${me.id},receiver_id.eq.${me.id}`).order('created_at',{ascending:false}).limit(300),
-    sb.from('group_members').select('chat_groups(id,name,owner_id)').eq('user_id',me.id).eq('status','active'),
-    sb.rpc('my_group_unread')]);
-  const ms=ok(dm).data, groups=(ok(gmr).data||[]).map(x=>x.chat_groups).filter(Boolean);
-  const gUnread=new Map((gu.data||[]).map(x=>[x.group_id,Number(x.n)]));
-  const map=new Map();
-  ms.forEach(x=>{const o=x.sender_id===me.id?x.receiver_id:x.sender_id; if(!map.has(o))map.set(o,{last:x,unread:0}); if(x.receiver_id===me.id&&!x.read_at)map.get(o).unread++;});
-  const ids=[...map.keys()].filter(i=>!myBlocked.has(i));
-  const ps=ids.length?ok(await sb.from('profiles').select(PSEL).in('id',ids)).data:[];
-  const gids=groups.map(g=>g.id);
-  const gl=gids.length?ok(await sb.from('messages').select('id,group_id,sender_id,body,audio_path,created_at').in('group_id',gids).order('created_at',{ascending:false}).limit(200)).data:[];
-  const lastG=new Map(); gl.forEach(x=>{if(!lastG.has(x.group_id))lastG.set(x.group_id,x);});
-  const pv=x=>(x.sender_id===me.id?L('You: '):'')+(x.audio_path?'🎙️ '+L('Voice message'):esc(x.body));
+  const d=await cached('chats',async()=>{
+    const [dm,gmr,gu]=await Promise.all([
+      sb.from('messages').select('*').is('group_id',null).or(`sender_id.eq.${me.id},receiver_id.eq.${me.id}`).order('created_at',{ascending:false}).limit(300),
+      sb.from('group_members').select('chat_groups(id,name,owner_id)').eq('user_id',me.id).eq('status','active'),
+      sb.rpc('my_group_unread')]);
+    const ms=ok(dm).data, groups=(ok(gmr).data||[]).map(x=>x.chat_groups).filter(Boolean);
+    const gUnread=(gu.data||[]).map(x=>[x.group_id,Number(x.n)]);
+    const map=new Map();
+    ms.forEach(x=>{const o=x.sender_id===me.id?x.receiver_id:x.sender_id; if(!map.has(o))map.set(o,{id:o,last:x,unread:0}); if(x.receiver_id===me.id&&!x.read_at)map.get(o).unread++;});
+    const dmList=[...map.values()], ids=dmList.map(x=>x.id);
+    const ps=ids.length?ok(await sb.from('profiles').select(PSEL).in('id',ids)).data:[];
+    const gids=groups.map(g=>g.id);
+    const gl=gids.length?ok(await sb.from('messages').select('id,group_id,sender_id,body,audio_path,media_path,media_type,created_at').in('group_id',gids).order('created_at',{ascending:false}).limit(200)).data:[];
+    return {dmList,ps,groups,gUnread,gl};
+  });
+  const {ps,groups}=d, gUnread=new Map(d.gUnread), dmList=d.dmList.filter(c=>!myBlocked.has(c.id));
+  const lastG=new Map(); d.gl.forEach(x=>{if(!lastG.has(x.group_id))lastG.set(x.group_id,x);});
+  const pv=x=>(x.sender_id===me.id?L('You: '):'')+(x.audio_path?'🎙️ '+L('Voice message'):x.media_path?(x.media_type==='video'?'🎥 '+L('Video'):'📷 '+L('Photo')):esc(x.body));
   const rows=[];
-  ids.forEach(id=>{
-    const p=ps.find(x=>x.id===id), c=map.get(id); if(!p)return;
-    rows.push({t:new Date(c.last.created_at).getTime(),h:`<button class="item ${c.unread?'unread':''}" data-a="chat" data-id="${id}">${avo(p,48)}
+  dmList.forEach(c=>{
+    const p=ps.find(x=>x.id===c.id); if(!p)return;
+    rows.push({t:new Date(c.last.created_at).getTime(),h:`<button class="item ${c.unread?'unread':''}" data-a="chat" data-id="${c.id}">${avo(p,48)}
       <span class="grow"><b>${nm(p)}</b><small class="clip">${pv(c.last)}</small></span>
       ${c.unread?`<span class="bd st">${bn(c.unread)}</span>`:''}</button>`});
   });
@@ -784,30 +1144,32 @@ async function vChats(m){
 
 /* ---- one-to-one chat ---- */
 async function vRoom(m,v){
-  const o=ok(await sb.from('profiles').select(PSEL).eq('id',v.id).single()).data;
-  const ms=ok(await sb.from('messages').select('*').is('group_id',null)
-    .or(`and(sender_id.eq.${me.id},receiver_id.eq.${v.id}),and(sender_id.eq.${v.id},receiver_id.eq.${me.id})`)
-    .order('created_at',{ascending:false}).limit(100)).data.reverse();
+  const o=await cached('prof:'+v.id,async()=>ok(await sb.from('profiles').select(PSEL).eq('id',v.id).single()).data);
+  const html=await msgsHtml('room',v.id);
   m.innerHTML=`<div class="rhead"><button class="ic" data-a="back" aria-label="${L('Back')}">${svg('back')}</button>
     <button class="who" data-a="profile" data-id="${o.id}">${avo(o,38)}<span><b>${nm(o)}</b><small data-st="${o.id}">${online.has(o.id)?L('Online'):L('Offline')}</small></span></button></div>
-    <div id="msgs">${ms.map(x=>bubble(x)).join('')}</div>
+    <div id="msgs">${html}</div>
     <div class="cbar" id="cb">${barInner()}</div>`;
   window.scrollTo(0,document.body.scrollHeight);
-  markRead(v.id);
+  hydrateMedia().catch(()=>{});
+  markRead(v.id).catch(()=>{});
 }
 
 /* ---- group chat ---- */
 async function vGroup(m,v){
-  const g=ok(await sb.from('chat_groups').select('id,name,owner_id').eq('id',v.id).single()).data;
-  const [mem,ms]=await Promise.all([
-    sb.from('group_members').select('user_id,profiles!group_members_user_fk(id,username,full_name,avatar_url,is_verified)').eq('group_id',g.id).eq('status','active'),
-    sb.from('messages').select('*').eq('group_id',g.id).order('created_at',{ascending:false}).limit(100)]);
-  gProfiles={}; ok(mem).data.forEach(x=>{gProfiles[x.user_id]=x.profiles;}); curGroup=g;
+  const d=await cached('grp:'+v.id,async()=>{
+    const g=ok(await sb.from('chat_groups').select('id,name,owner_id').eq('id',v.id).single()).data;
+    const mem=ok(await sb.from('group_members').select('user_id,profiles!group_members_user_fk(id,username,full_name,avatar_url,is_verified)').eq('group_id',g.id).eq('status','active')).data;
+    return {g,mem};
+  });
+  const g=d.g; gProfiles={}; d.mem.forEach(x=>{gProfiles[x.user_id]=x.profiles;}); curGroup=g;
+  const html=await msgsHtml('group',g.id);
   m.innerHTML=`<div class="rhead"><button class="ic" data-a="back" aria-label="${L('Back')}">${svg('back')}</button>
-    <button class="who" data-a="groupinfo" data-id="${g.id}">${av({full_name:g.name},38)}<span><b>${esc(g.name)}</b><small>${L('{n} members',{n:bn(mem.data.length)})}</small></span></button></div>
-    <div id="msgs">${ok(ms).data.reverse().map(x=>bubble(x)).join('')}</div>
+    <button class="who" data-a="groupinfo" data-id="${g.id}">${av({full_name:g.name},38)}<span><b>${esc(g.name)}</b><small>${L('{n} members',{n:bn(d.mem.length)})}</small></span></button></div>
+    <div id="msgs">${html}</div>
     <div class="cbar" id="cb">${barInner()}</div>`;
   window.scrollTo(0,document.body.scrollHeight);
+  hydrateMedia().catch(()=>{});
   sb.rpc('mark_group_read',{gid:g.id}).then(()=>refreshBadges());
 }
 async function vGroupInfo(m,v){
@@ -860,14 +1222,18 @@ async function vSettings(m){
     <label>${L('Bio')}<textarea id="sbio" rows="3" maxlength="160">${esc(myProfile.bio)}</textarea></label>
     <button class="btn" data-a="saveprofile">${L('Save changes')}</button></section>
   <section class="card form"><b>${L('Theme')}</b><div class="seg"><button data-a="theme" data-k="light">${L('Light')}</button><button data-a="theme" data-k="dark">${L('Dark')}</button></div></section>
+  <section class="card form"><b>${L('Data saver')}</b><span class="muted">${L('Photos load only when you tap them, and photos you upload are smaller.')}</span><div class="seg"><button class="${saver?'on':''}" data-a="saver" data-k="on">${L('On')}</button><button class="${saver?'':'on'}" data-a="saver" data-k="off">${L('Off')}</button></div></section>
   <section class="card form"><b>${L('Language')}</b><div class="seg"><button class="${lang==='en'?'on':''}" data-a="lang" data-k="en">English</button><button class="${lang==='bn'?'on':''}" data-a="lang" data-k="bn">বাংলা</button></div></section>
   <section class="card form"><b>${L('Account')}</b><span class="muted">${esc(me.email)}</span><button class="btn danger" data-a="logout">${L('Log out')}</button></section>`;
 }
 
 /* ================== ACTIONS ================== */
 const A={
+  top(){window.scrollTo({top:0,behavior:'smooth'});},
   tab(t){
     const k=t.dataset.k;
+    const cur=document.querySelector('.nav button.on');
+    if(cur&&cur.dataset&&cur.dataset.k===k&&k!=='compose'&&window.scrollY>240){window.scrollTo({top:0,behavior:'smooth'});return;}
     if(k==='compose'){
       if(view.name==='home'){$('#pb')?.focus();window.scrollTo(0,0);return;}
       stack=[];view={name:'home'};history.replaceState(null,'');return render().then(()=>$('#pb')?.focus());
@@ -949,6 +1315,51 @@ const A={
   },
   theme:t=>setTheme(t.dataset.k),
   lang:t=>setLang(t.dataset.k),
+  wallet:()=>go('wallet'),
+  async withdraw(t){
+    const a=($('#wbk1').value||'').replace(/\s/g,''), b=($('#wbk2').value||'').replace(/\s/g,'');
+    if(!/^01[3-9][0-9]{8}$/.test(a))return toast(L('Enter a valid 11-digit bKash number'));
+    if(a!==b)return toast(L('The two bKash numbers do not match'));
+    if(!confirm(L('Withdraw your full balance to {n}?',{n:a})))return;
+    t.disabled=true;
+    try{ok(await sb.rpc('request_withdrawal',{num:a,num2:b}));toast(L('Withdrawal request submitted successfully'));render();loadWallet().catch(()=>{});}
+    finally{t.disabled=false;}
+  },
+  async copyref(t){try{await navigator.clipboard.writeText(t.dataset.v);toast(L('Copied'));}catch(e){toast(t.dataset.v);}},
+  async shareref(t){
+    if(navigator.share){try{await navigator.share({title:'FIT GRAM',text:L('Join me on FIT GRAM'),url:t.dataset.v});}catch(e){}}
+    else return A.copyref(t);
+  },
+  ptab(t){
+    const k=t.dataset.k, a=$('#pp-posts'), b=$('#pp-photos'); if(a)a.hidden=k!=='posts'; if(b)b.hidden=k!=='photos';
+    document.querySelectorAll('[data-a="ptab"]').forEach(x=>x.classList.toggle('on',x.dataset.k===k));
+  },
+  zoom(t){const src=t.getAttribute('src'); if(src)openViewer(src);},
+  closezoom:()=>closeViewer(),
+  async saveimg(t){
+    if(!zv)return; const url=zv.src; t.disabled=true;
+    try{
+      const r=await fetch(url); if(!r.ok)throw new Error('fetch');
+      const blob=await r.blob(), ext=((blob.type.split('/')[1]||'jpg').replace('jpeg','jpg').replace(/[^a-z0-9]/g,''))||'jpg';
+      const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='fitgram-'+Date.now()+'.'+ext;
+      document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(a.href),5000);
+      toast(L('Photo saved'));
+    }catch(e){window.open(url,'_blank');toast(L('Opened in a new tab. Long-press the photo to save it.'));}
+    finally{t.disabled=false;}
+  },
+  async shareimg(){
+    if(!zv)return;
+    try{
+      const r=await fetch(zv.src), b=await r.blob(), f=new File([b],'fitgram.jpg',{type:b.type||'image/jpeg'});
+      if(navigator.canShare&&navigator.canShare({files:[f]}))await navigator.share({files:[f]}); else await navigator.share({url:zv.src});
+    }catch(e){}
+  },
+  async loadmedia(t){
+    const {data,error}=await sb.storage.from('chatmedia').createSignedUrl(t.dataset.mp,3600); if(error)throw error;
+    t.outerHTML=t.dataset.mt==='video'?`<video class="mimg" controls playsinline src="${esc(data.signedUrl)}"></video>`:`<img class="mimg" alt="" data-a="zoom" src="${esc(data.signedUrl)}">`;
+  },
+  loadimg(t){t.outerHTML=`<img class="pimg" data-a="zoom" src="${esc(t.dataset.src)}" alt="">`;},
+  saver(t){saver=t.dataset.k==='on';try{localStorage.setItem('fg-saver',saver?'1':'0')}catch(e){}render();},
   async logout(){ok(await sb.auth.signOut());},
 
   async publish(t){
@@ -991,9 +1402,7 @@ const A={
   },
   async send(){
     const i=$('#mi'), body=i.value.trim(); if(!body)return; i.value='';
-    const row=view.name==='group'?{sender_id:me.id,group_id:view.id,body}:{sender_id:me.id,receiver_id:view.id,body};
-    const r=await sb.from('messages').insert(row).select().single();
-    if(r.error){i.value=body;throw r.error;} addBubble(r.data);
+    await queueMsg({kind:'text',body});
   },
   async rec(){
     try{await startRec();}
@@ -1073,6 +1482,7 @@ document.addEventListener('click',e=>{
 });
 document.addEventListener('change',e=>{
   const t=e.target;
+  if(t.id==='mf'){pickMedia(t).catch(x=>toast(errMsg(x)));return;}
   if(t.id==='pf'){const f=t.files[0],pv=$('#pv'),tx=$('#pvt');pv.hidden=true;tx.hidden=true;
     if(f&&f.type.startsWith('image/')){pv.src=URL.createObjectURL(f);pv.hidden=false;}
     else if(f){tx.textContent=L('Video selected: ')+f.name;tx.hidden=false;}}
@@ -1134,7 +1544,7 @@ function wrapText(g,text,maxW){
   if(cur)lines.push(cur); return lines;
 }
 function seExport(){
-  const img=$('#seimg'), nw=img.naturalWidth, nh=img.naturalHeight, k=Math.min(1,1280/Math.max(nw,nh));
+  const img=$('#seimg'), nw=img.naturalWidth, nh=img.naturalHeight, k=Math.min(1,(saver?720:1280)/Math.max(nw,nh));
   const W=Math.round(nw*k), H=Math.round(nh*k), c=document.createElement('canvas'); c.width=W; c.height=H;
   const g=c.getContext('2d'); g.drawImage(img,0,0,W,H);
   for(const it of se.items){
@@ -1155,11 +1565,64 @@ function seExport(){
   return new Promise((res,rej)=>c.toBlob(b=>b?res(b):rej(new Error('export failed')),'image/jpeg',.9));
 }
 
+/* ================== PHOTO VIEWER (zoom, save) ================== */
+let zv=null, zvTap=0;
+function closeViewer(){$('#lb')?.remove();zv=null;}
+function openViewer(src){
+  closeViewer();
+  const o=document.createElement('div'); o.id='lb';
+  o.innerHTML=`<div class="lbbar"><button data-a="closezoom" aria-label="${L('Close')}">✕</button><span class="grow"></span>${navigator.share?`<button data-a="shareimg" aria-label="${L('Share')}">↗</button>`:''}<button data-a="saveimg">⬇ ${L('Save photo')}</button></div><div class="lbst"><img id="lbimg" alt="" draggable="false" src="${esc(src)}"></div>`;
+  document.body.appendChild(o);
+  zv={src,s:1,x:0,y:0,pts:new Map(),d0:1,s0:1,moved:0,t0:0};
+}
+const lbApply=()=>{const i=$('#lbimg');if(i&&zv)i.style.transform=`translate(${zv.x}px,${zv.y}px) scale(${zv.s})`;};
+const lbDist=()=>{const p=[...zv.pts.values()];return Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y)||1;};
+document.addEventListener('pointerdown',e=>{
+  if(!zv||!(e.target.closest&&e.target.closest('.lbst')))return;
+  zv.pts.set(e.pointerId,{x:e.clientX,y:e.clientY}); zv.moved=0; zv.t0=Date.now();
+  if(zv.pts.size===2){zv.d0=lbDist();zv.s0=zv.s;}
+});
+document.addEventListener('pointermove',e=>{
+  if(!zv||!zv.pts.has(e.pointerId))return;
+  const p=zv.pts.get(e.pointerId), dx=e.clientX-p.x, dy=e.clientY-p.y; p.x=e.clientX; p.y=e.clientY; zv.moved+=Math.abs(dx)+Math.abs(dy);
+  if(zv.pts.size===2)zv.s=Math.min(6,Math.max(1,zv.s0*lbDist()/zv.d0));
+  else if(zv.s>1){zv.x+=dx;zv.y+=dy;}
+  if(zv.s===1){zv.x=0;zv.y=0;}
+  lbApply();
+});
+const lbUp=e=>{
+  if(!zv||!zv.pts.has(e.pointerId))return;
+  const single=zv.pts.size===1; zv.pts.delete(e.pointerId);
+  if(single&&zv.moved<10&&Date.now()-zv.t0<350){
+    const now=Date.now();
+    if(now-zvTap<320){zv.s=zv.s>1?1:2.5;zv.x=0;zv.y=0;lbApply();zvTap=0;}
+    else{zvTap=now;if(e.target.id!=='lbimg')setTimeout(()=>{if(zvTap===now&&zv&&zv.s===1)closeViewer();},330);}
+  }
+};
+document.addEventListener('pointerup',lbUp); document.addEventListener('pointercancel',lbUp);
+document.addEventListener('wheel',e=>{if(!zv)return;e.preventDefault();zv.s=Math.min(6,Math.max(1,zv.s*(e.deltaY<0?1.15:.87)));if(zv.s===1){zv.x=0;zv.y=0;}lbApply();},{passive:false});
+
+/* keyboard open: hide the bottom bar so the typing area is not pushed up */
+document.addEventListener('focusin',e=>{const t=e.target;if(t&&document.body.classList&&(t.tagName==='TEXTAREA'||(t.tagName==='INPUT'&&!['file','checkbox','button'].includes(t.type))))document.body.classList.add('typing');});
+document.addEventListener('focusout',()=>{if(document.body.classList)document.body.classList.remove('typing');});
+
+/* ================== SMART SCROLL ================== */
+(function(){
+  let last=window.scrollY||0;
+  window.addEventListener('scroll',()=>{
+    const y=window.scrollY||0, d=y-last, t=$('.top'), u=$('#up');
+    if(t){if(y>90&&d>6)t.classList.add('hide');else if(d<-6||y<=90)t.classList.remove('hide');}
+    if(u)u.hidden=y<700; last=y;
+  },{passive:true});
+})();
+
 /* ================== START ================== */
 (async()=>{
   if(cfg.url.startsWith('PASTE')){app.innerHTML='<div class="empty">Paste your Supabase URL and anon key at the top of index.html.</div>';return;}
-  const {data:{session}}=await sb.auth.getSession();
-  session?boot(session.user):authScreen();
+  const got=await Promise.race([sb.auth.getSession(),new Promise(r=>setTimeout(()=>r({data:{session:null},error:{message:'timeout'}}),4000))]);
+  let user=got.data&&got.data.session?got.data.session.user:null;
+  if(!user&&(!navigator.onLine||isNetErr(got.error))){const su=storedUser();if(su){user=su;offlineNow=true;}}
+  user?boot(user):authScreen();
   sb.auth.onAuthStateChange((ev,s)=>{
     if(ev==='SIGNED_IN'&&s&&(!me||me.id!==s.user.id))boot(s.user);
     if(ev==='SIGNED_OUT'){cleanup();authScreen();}
